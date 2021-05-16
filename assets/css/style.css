@@ -17,6 +17,7 @@ header {
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 header h1 {
@@ -69,7 +70,6 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     background-attachment: fixed;
-    background-position: 100%;
     position: relative;
 }
 
@@ -83,3 +83,100 @@ header nav ul li a:hover {
     bottom: 20px;
     right: 50px;
 }
+
+.description {
+    padding: 50px 0;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sub-cat {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;  
+}
+
+.sub-cat p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.sub-cat h3 {
+    font-size: 60px;
+    flex: 1 20%;
+    color: var(--primary-color);
+    text-align: right;
+    padding-right: 20px;
+}
+
+.sub-cat .exp {
+    display: flex;
+    flex: 2 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    border-left: 3px solid;
+}
+
+.pic2 {
+    position: relative;
+    flex: 1 40%;
+    padding: 10px;
+}
+
+.pic1 {
+    position: relative;
+    flex: 1 80%;
+    padding: 10px; 
+}
+
+.pic2 h4, .pic1 h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--secondary-color);
+}
+
+.pic1 img {
+    height: 400px;
+    width: 1200px;
+}
+
+.pic2 img {
+    height: 300px;
+    width: 600px;
+}
+
+.bio {
+    flex: 2 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-left: 3px solid;
+    padding-left: 10px;
+}
+
+.contact ul{
+    flex: 2 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-left: 3px solid;
+    font-size: 40px;
+    padding-left: 10px;
+    list-style: none;
+    align-items: flex-end;
+}
+/* .contact p, .media {
+    flex: 2 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-left: 3px solid;
+    padding-left: 10px;
+    font-size: 40px;
+} */
